@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import scikit-learn as sklearn
+import sklearn
 from PIL import Image
 import subprocess
 import os
