@@ -1,0 +1,4 @@
+streamlit
+pandas
+scikit-learn==0.24.2
+pillow==8.3.1
