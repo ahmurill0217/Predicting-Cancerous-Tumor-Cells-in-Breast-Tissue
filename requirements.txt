@@ -3,4 +3,4 @@ pandas
 scikit-learn==0.24.2
 pillow==8.3.1
 plotly>=4.14.3
-streamlit-authenticator
+streamlit-authenticator==0.1.5
