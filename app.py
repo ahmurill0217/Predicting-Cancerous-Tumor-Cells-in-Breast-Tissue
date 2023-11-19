@@ -20,8 +20,14 @@ file_path = Path(r'C:\Users\Admin\Desktop\Capstone Project\generate_keys.py').pa
 with file_path.open("rb") as file:
     hashed_passwords = pickle.load(file)
 
-authenticator = stauth.Authenticate(names, usernames, hashed_passwords,
-    "Tumor_Cell_Prediction", "abcdef", cookie_expiry_days=30)
+authenticator = stauth.Authenticate(
+    names=names,
+    usernames=usernames,
+    passwords=hashed_passwords,
+    cookie_name="Tumor_Cell_Prediction",
+    key="abcdef",
+    cookie_expiry_days=30
+)
 
 name, authentication_status, username = authenticator.login("Login", "sidebar")
 
